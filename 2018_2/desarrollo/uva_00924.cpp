@@ -7,6 +7,10 @@ using namespace std;
 
 int main(){
 
+  clock_t begin = clock();
+
+
+
   int E; //Nro Empleados, max 2500
   cin >> E;
   vector<vector<int>> grafoMatriz(E);
@@ -17,20 +21,20 @@ int main(){
   for (int e = 0; e < E; e++) {
     for (int f= 0; f < E; f++) {
       grafoMatriz[e].push_back(INF);
-    //  cout << grafoMatriz[e][f]<<"|";
+      cout << grafoMatriz[e][f]<<"|";
       if(e==f)grafoMatriz[e][f] = 0;
     }
-  //  cout << endl;
+    cout << endl;
   }
 
   for (int e= 0; e <E; e++) {
     int numeroAmigos;
     cin >> numeroAmigos;
-//cout << e<<" tiene "<<numeroAmigos<<" amigos" << endl;
+cout << e<<" tiene "<<numeroAmigos<<" amigos" << endl;
     while (numeroAmigos > 0 ) {
       int amigo;
       cin >> amigo;
-    //  cout << "Amigo "<<amigo<<endl;
+      cout << "Amigo "<<amigo<<endl;
       grafoMatriz[e][amigo] = 1;
       //grafoMatriz[amigo][e] = 1;
       numeroAmigos--;
@@ -47,13 +51,13 @@ int main(){
       }
     }
   }
-//  cout << "Nuevo Grafo "<< endl;
+ cout << "Nuevo Grafo "<< endl;
   for (int e = 0; e < E; e++) {
     for (int f= 0; f < E; f++) {
       if (grafoMatriz[e][f]!=INF) {
-    //  cout << setfill('0') << setw(3) << grafoMatriz[e][f]<<"|";
+      cout << setfill('0') << setw(3) << grafoMatriz[e][f]<<"|";
       }
-    
+
     }
   //  cout << endl;
   }
@@ -98,7 +102,9 @@ int main(){
 
 
   }
-
+  clock_t end = clock();
+  double elapsed_secs = double(end - begin) / CLOCKS_PER_SEC;
+  cout << elapsed_secs<<endl;
 
   return 0;
 

@@ -37,9 +37,6 @@ int main(){
   */
   int servers, cables;
 
-  ofstream myfile;
-
-  myfile.open ("check.txt");
   int S;
   int T;
 
@@ -51,11 +48,7 @@ int main(){
     cin >>S;
     cin >>T;
 
-    cout << "Caso:" << casos<<endl;
-    cout << "servers" << servers<<endl;
-    cout << "Cables" << cables<<endl;
-    cout << "Desde" << S<<endl;
-    cout << "Hasta" << T<<endl;
+
 
     int matrizGrafo[servers][servers];
 
@@ -74,7 +67,6 @@ int main(){
       cin >> n1;
       cin >> n2;
       cin >>w;
-      cout << "Arco " <<n1 << " ,"<<n2<<" peso:"<<w<<endl;
 
       adjacenciaGrafo[n1].insert(n2);
       adjacenciaGrafo[n2].insert(n1);
@@ -110,34 +102,34 @@ int main(){
 
       int nodoActual = minNodosNoVisitados(distancia,visitados);
 
-      cout << "Nodo "<<nodoActual<<endl;
+
 
       //Revisar las distancias de los vecinos al nodo source
 
       auto it = adjacenciaGrafo[nodoActual].begin();
-      cout << "Cantidad de vecinos" << adjacenciaGrafo[nodoActual].size() <<endl;
+  //    cout << "Cantidad de vecinos" << adjacenciaGrafo[nodoActual].size() <<endl;
       while (it != adjacenciaGrafo[nodoActual].end()) {
-        cout << "Vecino "<<*it<<endl;
+    //    cout << "Vecino "<<*it<<endl;
         int distanciaVecino = matrizGrafo[(*it)][nodoActual];
-        cout << "DistVec al nodo actual "<<distanciaVecino<<endl;
+//cout << "DistVec al nodo actual "<<distanciaVecino<<endl;
 
         if(distanciaVecino+distancia[nodoActual] <= distancia[(*it)] && visitados[(*it)]==0){
-          cout << distanciaVecino+distancia[nodoActual] << " <=" <<  distancia[(*it)] <<endl;
+        //  cout << distanciaVecino+distancia[nodoActual] << " <=" <<  distancia[(*it)] <<endl;
           distancia[(*it)] = distanciaVecino+distancia[nodoActual];
-          cout << "Actualiza distancia ";
+        //  cout << "Actualiza distancia ";
 
         }
         ++it;
       }
 visitados[nodoActual] =1;
-    cout << "No hay mas vecinos "<<nodoActual<<endl;
+  //  cout << "No hay mas vecinos "<<nodoActual<<endl;
     }
-    myfile << "Case #"<<casos<<": ";
+    cout << "Case #"<<casos<<": ";
     if(distancia[T] == INF){
-      myfile<<"unreachable"<<endl;
+      cout<<"unreachable"<<endl;
     }
     else{
-      myfile<<distancia[T]<<endl;
+      cout<<distancia[T]<<endl;
     }
 
 
@@ -154,6 +146,6 @@ visitados[nodoActual] =1;
   }
 
 
-myfile.close();
+
   return 0;
 }

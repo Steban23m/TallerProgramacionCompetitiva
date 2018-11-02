@@ -1,0 +1,332 @@
+ # Prenda: 0 Modelos:3
+Op 0: 8|Op 1: 6|Op 2: 4|
+ # Prenda: 1 Modelos:2
+Op 0: 5|Op 1: 10|
+ # Prenda: 2 Modelos:4
+Op 0: 1|Op 1: 3|Op 2: 3|Op 3: 7|
+ # Prenda: 3 Modelos:4
+Op 0: 50|Op 1: 14|Op 2: 23|Op 3: 8|
+#BestShop budget100, pieza:0
+Aun no es la ultima pieza de ropa;
+Opciones : 3
+Se puede usar pieza con costo: 8
+#BestShop budget92, pieza:1
+Aun no es la ultima pieza de ropa;
+Opciones : 2
+Se puede usar pieza con costo: 5
+#BestShop budget87, pieza:2
+Aun no es la ultima pieza de ropa;
+Opciones : 4
+Se puede usar pieza con costo: 1
+#BestShop budget86, pieza:3
+ultima prenda
+Prenda con coste 50
+Mejora lo gastado y esta dentro de presupuesto
+Prenda con coste 14
+Prenda con coste 23
+Prenda con coste 8
+Retornando pieza ropa: 3 mejor gasto :50 con pp 86
+Dinero gastado : 51
+Mejora lo gastado anterior : 0menor que 51
+Se puede usar pieza con costo: 3
+#BestShop budget84, pieza:3
+ultima prenda
+Prenda con coste 50
+Mejora lo gastado y esta dentro de presupuesto
+Prenda con coste 14
+Prenda con coste 23
+Prenda con coste 8
+Retornando pieza ropa: 3 mejor gasto :50 con pp 84
+Dinero gastado : 53
+Mejora lo gastado anterior : 51menor que 53
+Se puede usar pieza con costo: 3
+#BestShop budget84, pieza:3
+ultima prenda
+Prenda con coste 50
+Mejora lo gastado y esta dentro de presupuesto
+Prenda con coste 14
+Prenda con coste 23
+Prenda con coste 8
+Retornando pieza ropa: 3 mejor gasto :50 con pp 84
+Dinero gastado : 53
+Se puede usar pieza con costo: 7
+#BestShop budget80, pieza:3
+ultima prenda
+Prenda con coste 50
+Mejora lo gastado y esta dentro de presupuesto
+Prenda con coste 14
+Prenda con coste 23
+Prenda con coste 8
+Retornando pieza ropa: 3 mejor gasto :50 con pp 80
+Dinero gastado : 57
+Mejora lo gastado anterior : 53menor que 57
+Retornando pieza ropa: 2 mejor gasto :57 con pp 87
+Dinero gastado : 62
+Mejora lo gastado anterior : 0menor que 62
+Se puede usar pieza con costo: 10
+#BestShop budget82, pieza:2
+Aun no es la ultima pieza de ropa;
+Opciones : 4
+Se puede usar pieza con costo: 1
+#BestShop budget81, pieza:3
+ultima prenda
+Prenda con coste 50
+Mejora lo gastado y esta dentro de presupuesto
+Prenda con coste 14
+Prenda con coste 23
+Prenda con coste 8
+Retornando pieza ropa: 3 mejor gasto :50 con pp 81
+Dinero gastado : 51
+Mejora lo gastado anterior : 0menor que 51
+Se puede usar pieza con costo: 3
+#BestShop budget79, pieza:3
+ultima prenda
+Prenda con coste 50
+Mejora lo gastado y esta dentro de presupuesto
+Prenda con coste 14
+Prenda con coste 23
+Prenda con coste 8
+Retornando pieza ropa: 3 mejor gasto :50 con pp 79
+Dinero gastado : 53
+Mejora lo gastado anterior : 51menor que 53
+Se puede usar pieza con costo: 3
+#BestShop budget79, pieza:3
+ultima prenda
+Prenda con coste 50
+Mejora lo gastado y esta dentro de presupuesto
+Prenda con coste 14
+Prenda con coste 23
+Prenda con coste 8
+Retornando pieza ropa: 3 mejor gasto :50 con pp 79
+Dinero gastado : 53
+Se puede usar pieza con costo: 7
+#BestShop budget75, pieza:3
+ultima prenda
+Prenda con coste 50
+Mejora lo gastado y esta dentro de presupuesto
+Prenda con coste 14
+Prenda con coste 23
+Prenda con coste 8
+Retornando pieza ropa: 3 mejor gasto :50 con pp 75
+Dinero gastado : 57
+Mejora lo gastado anterior : 53menor que 57
+Retornando pieza ropa: 2 mejor gasto :57 con pp 82
+Dinero gastado : 67
+Mejora lo gastado anterior : 62menor que 67
+Retornando pieza ropa: 1 mejor gasto :67 con pp 92
+Dinero gastado : 75
+Mejora lo gastado anterior : 0menor que 75
+Se puede usar pieza con costo: 6
+#BestShop budget94, pieza:1
+Aun no es la ultima pieza de ropa;
+Opciones : 2
+Se puede usar pieza con costo: 5
+#BestShop budget89, pieza:2
+Aun no es la ultima pieza de ropa;
+Opciones : 4
+Se puede usar pieza con costo: 1
+#BestShop budget88, pieza:3
+ultima prenda
+Prenda con coste 50
+Mejora lo gastado y esta dentro de presupuesto
+Prenda con coste 14
+Prenda con coste 23
+Prenda con coste 8
+Retornando pieza ropa: 3 mejor gasto :50 con pp 88
+Dinero gastado : 51
+Mejora lo gastado anterior : 0menor que 51
+Se puede usar pieza con costo: 3
+#BestShop budget86, pieza:3
+ultima prenda
+Prenda con coste 50
+Mejora lo gastado y esta dentro de presupuesto
+Prenda con coste 14
+Prenda con coste 23
+Prenda con coste 8
+Retornando pieza ropa: 3 mejor gasto :50 con pp 86
+Dinero gastado : 53
+Mejora lo gastado anterior : 51menor que 53
+Se puede usar pieza con costo: 3
+#BestShop budget86, pieza:3
+ultima prenda
+Prenda con coste 50
+Mejora lo gastado y esta dentro de presupuesto
+Prenda con coste 14
+Prenda con coste 23
+Prenda con coste 8
+Retornando pieza ropa: 3 mejor gasto :50 con pp 86
+Dinero gastado : 53
+Se puede usar pieza con costo: 7
+#BestShop budget82, pieza:3
+ultima prenda
+Prenda con coste 50
+Mejora lo gastado y esta dentro de presupuesto
+Prenda con coste 14
+Prenda con coste 23
+Prenda con coste 8
+Retornando pieza ropa: 3 mejor gasto :50 con pp 82
+Dinero gastado : 57
+Mejora lo gastado anterior : 53menor que 57
+Retornando pieza ropa: 2 mejor gasto :57 con pp 89
+Dinero gastado : 62
+Mejora lo gastado anterior : 0menor que 62
+Se puede usar pieza con costo: 10
+#BestShop budget84, pieza:2
+Aun no es la ultima pieza de ropa;
+Opciones : 4
+Se puede usar pieza con costo: 1
+#BestShop budget83, pieza:3
+ultima prenda
+Prenda con coste 50
+Mejora lo gastado y esta dentro de presupuesto
+Prenda con coste 14
+Prenda con coste 23
+Prenda con coste 8
+Retornando pieza ropa: 3 mejor gasto :50 con pp 83
+Dinero gastado : 51
+Mejora lo gastado anterior : 0menor que 51
+Se puede usar pieza con costo: 3
+#BestShop budget81, pieza:3
+ultima prenda
+Prenda con coste 50
+Mejora lo gastado y esta dentro de presupuesto
+Prenda con coste 14
+Prenda con coste 23
+Prenda con coste 8
+Retornando pieza ropa: 3 mejor gasto :50 con pp 81
+Dinero gastado : 53
+Mejora lo gastado anterior : 51menor que 53
+Se puede usar pieza con costo: 3
+#BestShop budget81, pieza:3
+ultima prenda
+Prenda con coste 50
+Mejora lo gastado y esta dentro de presupuesto
+Prenda con coste 14
+Prenda con coste 23
+Prenda con coste 8
+Retornando pieza ropa: 3 mejor gasto :50 con pp 81
+Dinero gastado : 53
+Se puede usar pieza con costo: 7
+#BestShop budget77, pieza:3
+ultima prenda
+Prenda con coste 50
+Mejora lo gastado y esta dentro de presupuesto
+Prenda con coste 14
+Prenda con coste 23
+Prenda con coste 8
+Retornando pieza ropa: 3 mejor gasto :50 con pp 77
+Dinero gastado : 57
+Mejora lo gastado anterior : 53menor que 57
+Retornando pieza ropa: 2 mejor gasto :57 con pp 84
+Dinero gastado : 67
+Mejora lo gastado anterior : 62menor que 67
+Retornando pieza ropa: 1 mejor gasto :67 con pp 94
+Dinero gastado : 73
+Se puede usar pieza con costo: 4
+#BestShop budget96, pieza:1
+Aun no es la ultima pieza de ropa;
+Opciones : 2
+Se puede usar pieza con costo: 5
+#BestShop budget91, pieza:2
+Aun no es la ultima pieza de ropa;
+Opciones : 4
+Se puede usar pieza con costo: 1
+#BestShop budget90, pieza:3
+ultima prenda
+Prenda con coste 50
+Mejora lo gastado y esta dentro de presupuesto
+Prenda con coste 14
+Prenda con coste 23
+Prenda con coste 8
+Retornando pieza ropa: 3 mejor gasto :50 con pp 90
+Dinero gastado : 51
+Mejora lo gastado anterior : 0menor que 51
+Se puede usar pieza con costo: 3
+#BestShop budget88, pieza:3
+ultima prenda
+Prenda con coste 50
+Mejora lo gastado y esta dentro de presupuesto
+Prenda con coste 14
+Prenda con coste 23
+Prenda con coste 8
+Retornando pieza ropa: 3 mejor gasto :50 con pp 88
+Dinero gastado : 53
+Mejora lo gastado anterior : 51menor que 53
+Se puede usar pieza con costo: 3
+#BestShop budget88, pieza:3
+ultima prenda
+Prenda con coste 50
+Mejora lo gastado y esta dentro de presupuesto
+Prenda con coste 14
+Prenda con coste 23
+Prenda con coste 8
+Retornando pieza ropa: 3 mejor gasto :50 con pp 88
+Dinero gastado : 53
+Se puede usar pieza con costo: 7
+#BestShop budget84, pieza:3
+ultima prenda
+Prenda con coste 50
+Mejora lo gastado y esta dentro de presupuesto
+Prenda con coste 14
+Prenda con coste 23
+Prenda con coste 8
+Retornando pieza ropa: 3 mejor gasto :50 con pp 84
+Dinero gastado : 57
+Mejora lo gastado anterior : 53menor que 57
+Retornando pieza ropa: 2 mejor gasto :57 con pp 91
+Dinero gastado : 62
+Mejora lo gastado anterior : 0menor que 62
+Se puede usar pieza con costo: 10
+#BestShop budget86, pieza:2
+Aun no es la ultima pieza de ropa;
+Opciones : 4
+Se puede usar pieza con costo: 1
+#BestShop budget85, pieza:3
+ultima prenda
+Prenda con coste 50
+Mejora lo gastado y esta dentro de presupuesto
+Prenda con coste 14
+Prenda con coste 23
+Prenda con coste 8
+Retornando pieza ropa: 3 mejor gasto :50 con pp 85
+Dinero gastado : 51
+Mejora lo gastado anterior : 0menor que 51
+Se puede usar pieza con costo: 3
+#BestShop budget83, pieza:3
+ultima prenda
+Prenda con coste 50
+Mejora lo gastado y esta dentro de presupuesto
+Prenda con coste 14
+Prenda con coste 23
+Prenda con coste 8
+Retornando pieza ropa: 3 mejor gasto :50 con pp 83
+Dinero gastado : 53
+Mejora lo gastado anterior : 51menor que 53
+Se puede usar pieza con costo: 3
+#BestShop budget83, pieza:3
+ultima prenda
+Prenda con coste 50
+Mejora lo gastado y esta dentro de presupuesto
+Prenda con coste 14
+Prenda con coste 23
+Prenda con coste 8
+Retornando pieza ropa: 3 mejor gasto :50 con pp 83
+Dinero gastado : 53
+Se puede usar pieza con costo: 7
+#BestShop budget79, pieza:3
+ultima prenda
+Prenda con coste 50
+Mejora lo gastado y esta dentro de presupuesto
+Prenda con coste 14
+Prenda con coste 23
+Prenda con coste 8
+Retornando pieza ropa: 3 mejor gasto :50 con pp 79
+Dinero gastado : 57
+Mejora lo gastado anterior : 53menor que 57
+Retornando pieza ropa: 2 mejor gasto :57 con pp 86
+Dinero gastado : 67
+Mejora lo gastado anterior : 62menor que 67
+Retornando pieza ropa: 1 mejor gasto :67 con pp 96
+Dinero gastado : 71
+Retornando pieza ropa: 0 mejor gasto :75 con pp 100
+75

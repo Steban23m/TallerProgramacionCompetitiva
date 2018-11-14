@@ -45,18 +45,17 @@ void calculateLongestHappyRoute(int route, vector<int> & stopsValues, vector<int
 
   }
 
-cout << "     ";
+//cout << "     ";
 
 for (int i = 0; i < happyValue.size(); i++) {
-    cout << "|" << happyValue[i] << "| ";
+  //cout << "|" << happyValue[i] << "| ";
 }
-
-cout << endl;
+//cout << endl;
 
 //Encontrar el valor de suma menor
 
 max_sum = *(max_element(happyValue.begin(),happyValue.end()));
-cout <<"   maxSum:"<<max_sum<<endl;
+//cout <<"   maxSum:"<<max_sum<<endl;
 
 if(max_sum < 0) {
     cout <<"Route "<< route << " has no nice parts" << endl;
@@ -70,7 +69,7 @@ else{
   firstStop=1;
   for(int i=0; i < happyValue.size();i++){
     int aux = happyValue[i];
-    if(aux < 1){
+    if(aux <  0){
       firstStop = i+2;
       lastStop++;
       sum = 0;
@@ -80,8 +79,8 @@ else{
     lastStop = i+2;
     sum = aux;
     if(sum == max_sum){
-      Routes r1(firstStop,lastStop,stops);
-      cout << "Ruta con valor max entre : "<< firstStop<< " y" << lastStop << endl;
+      Routes r1(firstStop,lastStop,lastStop-firstStop);
+     //cout << "Ruta con valor max entre : "<< firstStop<< " y" << lastStop << endl;
       routeswMaxSum.push_back(r1);
     }
     }
@@ -94,7 +93,7 @@ else{
     for (int i = 0; i < routeswMaxSum.size(); i++) {
 
       Routes temp = routeswMaxSum[i];
-      cout << "Ruta: start: "<< temp.firstStop << " end: " << temp.lastStop<< " paradas: " <<temp.numStops << endl;
+      //cout << "Ruta: start: "<< temp.firstStop << " end: " << temp.lastStop<< " paradas: " <<temp.numStops << endl;
       if(temp.numStops > maxParadas){
         rutaConMayorParada.clear();
         maxParadas = temp.numStops;
@@ -109,9 +108,11 @@ else{
     }
     //Si hay mas de una con misma cantidad de paradas, sacar la que comienza primero;
     if(rutaConMayorParada.size()>1){
+      //cout << "Mas de una ruta" << endl;
       Routes bestRoute = rutaConMayorParada[0];
       for (int i = 1; i < rutaConMayorParada.size(); i++) {
         Routes temp = rutaConMayorParada[i];
+
         if(temp.firstStop <= bestRoute.firstStop){
           bestRoute = temp;
         }
@@ -147,9 +148,9 @@ int main (){
 
   currentCase=1;
   while(numRoutes != 0 && currentCase <= numRoutes){
-    cout << "Route: "<< currentCase << endl;
+    //cout << "Route: "<< currentCase << endl;
     cin >> numStops;
-    cout << "  NumStops: "<< numStops << endl;
+    //cout << "  NumStops: "<< numStops << endl;
 
     for (int i = 0; i < numStops-1; i++) {
       int temp;
@@ -158,11 +159,11 @@ int main (){
     }
 
 
-    cout << "  NumStopsBetweenValues: "<< stopsValues.size() << endl;
+    //cout << "  NumStopsBetweenValues: "<< stopsValues.size() << endl;
     for (auto n:stopsValues) {
-      cout << n<<" ";
+      //cout << n<<" ";
     }
-    cout << endl;
+    //cout << endl;
     calculateLongestHappyRoute(currentCase,stopsValues, auxDP);
     stopsValues.clear();
     currentCase++;

@@ -1,264 +1,81 @@
-Money : 11
-coinsIndex 0
-Coin : 50
-Money : 11
-Coin : 25
-Money : 11
-Coin : 10
-Money : 11
-Money : 1
-coinsIndex 2
-Coin : 10
-Money : 1
-Coin : 5
-Money : 1
-Coin : 1
-Money : 1
-Money : 0
-coinsIndex 4
-memo[1,2] = 1
-Coin : 5
-Money : 11
-Money : 6
-coinsIndex 3
-Coin : 5
-Money : 6
-Money : 1
-coinsIndex 3
-Coin : 5
-Money : 1
-Coin : 1
-Money : 1
-Money : 0
-coinsIndex 4
-memo[1,3] = 1
-Coin : 1
-Money : 6
-Money : 5
-coinsIndex 4
-Coin : 1
-Money : 5
-Money : 4
-coinsIndex 4
-Coin : 1
-Money : 4
-Money : 3
-coinsIndex 4
-Coin : 1
-Money : 3
-Money : 2
-coinsIndex 4
-Coin : 1
-Money : 2
-Money : 1
-coinsIndex 4
-Coin : 1
-Money : 1
-Money : 0
-coinsIndex 4
-memo[1,4] = 1
-memo[2,4] = 1
-memo[3,4] = 1
-memo[4,4] = 1
-memo[5,4] = 1
-memo[6,3] = 2
-Coin : 1
-Money : 11
-Money : 10
-coinsIndex 4
-Coin : 1
-Money : 10
-Money : 9
-coinsIndex 4
-Coin : 1
-Money : 9
-Money : 8
-coinsIndex 4
-Coin : 1
-Money : 8
-Money : 7
-coinsIndex 4
-Coin : 1
-Money : 7
-Money : 6
-coinsIndex 4
-Coin : 1
-Money : 6
-Money : 5
-coinsIndex 4
-Saca valor de la tabla
-memo[6,4] = 1
-memo[7,4] = 1
-memo[8,4] = 1
-memo[9,4] = 1
-memo[10,4] = 1
-memo[11,0] = 4
-4
-Money : 26
-coinsIndex 0
-Coin : 50
-Money : 26
-Coin : 25
-Money : 26
-Money : 1
-coinsIndex 1
-Coin : 25
-Money : 1
-Coin : 10
-Money : 1
-Coin : 5
-Money : 1
-Coin : 1
-Money : 1
-Money : 0
-coinsIndex 4
-memo[1,1] = 1
-Coin : 10
-Money : 26
-Money : 16
-coinsIndex 2
-Coin : 10
-Money : 16
-Money : 6
-coinsIndex 2
-Coin : 10
-Money : 6
-Coin : 5
-Money : 6
-Money : 1
-coinsIndex 3
-Saca valor de la tabla
-Coin : 1
-Money : 6
-Money : 5
-coinsIndex 4
-Saca valor de la tabla
-memo[6,2] = 2
-Coin : 5
-Money : 16
-Money : 11
-coinsIndex 3
-Coin : 5
-Money : 11
-Money : 6
-coinsIndex 3
-Saca valor de la tabla
-Coin : 1
-Money : 11
-Money : 10
-coinsIndex 4
-Saca valor de la tabla
-memo[11,3] = 3
-Coin : 1
-Money : 16
-Money : 15
-coinsIndex 4
-Coin : 1
-Money : 15
-Money : 14
-coinsIndex 4
-Coin : 1
-Money : 14
-Money : 13
-coinsIndex 4
-Coin : 1
-Money : 13
-Money : 12
-coinsIndex 4
-Coin : 1
-Money : 12
-Money : 11
-coinsIndex 4
-Coin : 1
-Money : 11
-Money : 10
-coinsIndex 4
-Saca valor de la tabla
-memo[11,4] = 1
-memo[12,4] = 1
-memo[13,4] = 1
-memo[14,4] = 1
-memo[15,4] = 1
-memo[16,2] = 6
-Coin : 5
-Money : 26
-Money : 21
-coinsIndex 3
-Coin : 5
-Money : 21
-Money : 16
-coinsIndex 3
-Coin : 5
-Money : 16
-Money : 11
-coinsIndex 3
-Saca valor de la tabla
-Coin : 1
-Money : 16
-Money : 15
-coinsIndex 4
-Saca valor de la tabla
-memo[16,3] = 4
-Coin : 1
-Money : 21
-Money : 20
-coinsIndex 4
-Coin : 1
-Money : 20
-Money : 19
-coinsIndex 4
-Coin : 1
-Money : 19
-Money : 18
-coinsIndex 4
-Coin : 1
-Money : 18
-Money : 17
-coinsIndex 4
-Coin : 1
-Money : 17
-Money : 16
-coinsIndex 4
-Coin : 1
-Money : 16
-Money : 15
-coinsIndex 4
-Saca valor de la tabla
-memo[16,4] = 1
-memo[17,4] = 1
-memo[18,4] = 1
-memo[19,4] = 1
-memo[20,4] = 1
-memo[21,3] = 5
-Coin : 1
-Money : 26
-Money : 25
-coinsIndex 4
-Coin : 1
-Money : 25
-Money : 24
-coinsIndex 4
-Coin : 1
-Money : 24
-Money : 23
-coinsIndex 4
-Coin : 1
-Money : 23
-Money : 22
-coinsIndex 4
-Coin : 1
-Money : 22
-Money : 21
-coinsIndex 4
-Coin : 1
-Money : 21
-Money : 20
-coinsIndex 4
-Saca valor de la tabla
-memo[21,4] = 1
-memo[22,4] = 1
-memo[23,4] = 1
-memo[24,4] = 1
-memo[25,4] = 1
-memo[26,0] = 13
-13
+v: 0
+sum[i-1][j]: 0
+sum[i][j-1]: 0
+sum[i-1][j-1]: 0
+Nuevo sum[i][j]: 0
+v: -2
+sum[i-1][j]: 0
+sum[i][j-1]: 0
+sum[i-1][j-1]: 0
+Nuevo sum[i][j]: -2
+v: -7
+sum[i-1][j]: 0
+sum[i][j-1]: -2
+sum[i-1][j-1]: -2
+Nuevo sum[i][j]: -9
+v: 0
+sum[i-1][j]: 0
+sum[i][j-1]: -9
+sum[i-1][j-1]: -9
+Nuevo sum[i][j]: -9
+v: 9
+sum[i-1][j]: 0
+sum[i][j-1]: 0
+sum[i-1][j-1]: 0
+Nuevo sum[i][j]: 9
+v: 2
+sum[i-1][j]: -2
+sum[i][j-1]: 9
+sum[i-1][j-1]: 9
+Nuevo sum[i][j]: 9
+v: -6
+sum[i-1][j]: -9
+sum[i][j-1]: 9
+sum[i-1][j-1]: 9
+Nuevo sum[i][j]: -4
+v: 2
+sum[i-1][j]: -9
+sum[i][j-1]: -4
+sum[i-1][j-1]: -4
+Nuevo sum[i][j]: -2
+v: -4
+sum[i-1][j]: 9
+sum[i][j-1]: 0
+sum[i-1][j-1]: 0
+Nuevo sum[i][j]: 5
+v: 1
+sum[i-1][j]: 9
+sum[i][j-1]: 5
+sum[i-1][j-1]: 5
+Nuevo sum[i][j]: 6
+v: -4
+sum[i-1][j]: -4
+sum[i][j-1]: 6
+sum[i-1][j-1]: 6
+Nuevo sum[i][j]: -11
+v: 1
+sum[i-1][j]: -2
+sum[i][j-1]: -11
+sum[i-1][j-1]: -11
+Nuevo sum[i][j]: -8
+v: -1
+sum[i-1][j]: 5
+sum[i][j-1]: 0
+sum[i-1][j-1]: 0
+Nuevo sum[i][j]: 4
+v: 8
+sum[i-1][j]: 6
+sum[i][j-1]: 4
+sum[i-1][j-1]: 4
+Nuevo sum[i][j]: 13
+v: 0
+sum[i-1][j]: -11
+sum[i][j-1]: 13
+sum[i-1][j-1]: 13
+Nuevo sum[i][j]: -4
+v: -2
+sum[i-1][j]: -8
+sum[i][j-1]: -4
+sum[i-1][j-1]: -4
+Nuevo sum[i][j]: -3
+15

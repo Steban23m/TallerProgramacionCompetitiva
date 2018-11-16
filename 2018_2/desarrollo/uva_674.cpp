@@ -1,95 +1,48 @@
 #include <bits/stdc++.h>
 
+/*Codigo extraido de https://github.com/oneillcode/Youtube-Tutorials/blob/master/Dynamic%20Programming/CoinChange.java
 
+Se adapto para c++
+
+*/
 using namespace std;
+//Vector monedas de menor a mayor
+vector<int> monedas ={1,5,10,25,50};
 
-vector<int> coins={50,25,10,5,1};
-int dptable[7489+1];
-set<vector<int>> optionsToGiveChange;
-int pruebasinfuturo=0;
-int coinChange(int monto, vector<int> coinsUsed){
-  ////cout <<"Coin Change :"<<monto<<endl;
-  if(monto == 0){
 
-    //cout <<"El monto se acabo(Retorna 1)"<<endl;
-    //cout <<"Coins Used:";
-    for (auto m: coinsUsed) {
-      //cout<<" "<<m<<" ";
-    }
-    sort(coinsUsed.begin(),coinsUsed.end());
-    optionsToGiveChange.insert(coinsUsed);
 
-    //cout <<endl;
-    pruebasinfuturo++;
-    return 1;
-  }
+int opcionesParaCambio(int monto){
+  int totalCombinaciones =0;
+  vector<int> tabla(monto+1);
 
-  //Monecas 50,25,10,5,1
-  int formasDarCambio=0;
+  //Valor inicial en 0 para hacer de caso base y construir el resto de los valores
+  tabla[0] = 1;
 
-  if(dptable[monto] != -78965){
-    //cout << "Cantidad de monedas estaba en tabla"<< endl;
-    return dptable[monto];
-  }
-  else{
-    for (auto moneda:coins) {
-      //cout <<"Revisar monto "<<monto<<" con moneda "<<moneda<<endl;
-      if (moneda <= monto) {
-        //cout <<"Calculando posibilidades" << endl;
-        //cout << "Llamando coinchange ("<<monto<<"-"<<moneda<<")"<<endl;
-        coinsUsed.push_back(moneda);
-        int temp = coinChange(monto - moneda,coinsUsed);
-        coinsUsed.erase(coinsUsed.end()-1);
-        formasDarCambio += temp;
-        //cout <<"Sumando "<<temp<<" a formas cambio para monto "<<monto<<". Nuevo valor :"<<formasDarCambio<<endl;
+  //Iterar cada una de las monedas
+  for (int j = 0; j < monedas.size(); j++) {
+    int monedaActual = monedas[j];
 
-      }
-      else{
-        //cout <<"No se puede dar cambio con esa moneda("<<moneda<<")"<<endl;
-      }
-    }
-    //cout <<"Escribiendo en tabla [monto]: "<< formasDarCambio<<endl;
-  //  dptable[monto] = formasDarCambio;
-  }
-  for (int i = 0; i < 7489+1; i++) {
-    if(dptable[i]!= -78965){
-      //cout << "Monto "<<i<< " -> "<< dptable[i]<<endl;
+    for (int i = 1; i <= monto; i++) {
+        if(monedaActual <= i){
+          /*Si la moneda actual es menor o igual que el monto, el valor de las combinaciones posibles para el vuelto
+          con las monedas que se han revisado sera igual al valor que habia antes de combinaciones mas las combinaciones aportadas por  la moneda nueva
+
+          Esto se hace sumando el contenido de la celda i - moneda actual, siendo i el monto que esta siendo considerado*/
+          tabla[i] += tabla[i-monedaActual];
+        }
     }
   }
-  return formasDarCambio;
+  return tabla[monto];
+
 
 }
+
+
 int main(){
-
-  vector<int> dummy;
-  for (int j = 0; j < 7489+1; j++) {
-    dptable[j] = -78965;
-  }
-
-
-  int monto;
-
-  while (cin>>monto) {
-    //cout << "Leido Monto : "<<monto<<endl;
-    coinChange(monto,dummy);
-    //cout <<"WOLOLO:" <<coinChange(monto,dummy) << endl;
-    //cout<<"Prueba sin futuro"<<pruebasinfuturo<<"|"<<endl;
-    cout <<optionsToGiveChange.size()<<endl;
-    pruebasinfuturo=0;
-
-
-    auto it = optionsToGiveChange.begin();
-
-    while (it != optionsToGiveChange.end()) {
-      vector<int> temp = *(it);
-      for (auto i :temp) {
-        //cout << " "<<i <<" ";
-      }
-      //cout << endl;
-      ++it;
+    int money;
+    while (cin >> money)
+    {
+        cout << opcionesParaCambio(money) << endl;
     }
-    optionsToGiveChange.clear();
-  }
-
-  return 0;
+    return 0;
 }

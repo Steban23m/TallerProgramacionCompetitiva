@@ -2,6 +2,12 @@
 
 using namespace std;
 
+char isPossibleRectangle(vector<int> trees,vector<float> treeAngles){
+
+
+}
+
+
 int main(){
   int nTrees;
   vector<int> trees;
